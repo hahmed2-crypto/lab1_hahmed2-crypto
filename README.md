@@ -5,25 +5,28 @@ This project has two small programs:
 1. **grade-evaluator.py** - reads a student's grades from a CSV file and tells you if they passed or failed.
 2. **organizer.sh** - archives that grades file and starts a fresh, empty one, so you are ready for the next batch.
 
-## What you need
+## What I need
 
 - Python 3 installed
 - A terminal that can run bash scripts (WSL, Git Bash, or any Linux/Mac terminal)
 
-## How the grades file should look
+## How the grades file(grades.csv) should look
 
 The program expects a file called grades.csv in the same folder, with these columns:
 
 assignment,group,score,weight
 Quiz,Formative,85,20
-Midterm,Summative,70,20
+Group Exercise,Formative,40,20
+Functions and Debugging Lab,Formative,45,20
+Midterm Project - Simple Calculator,Summative,70,20
+Final Project - Text-Based Game,Summative,60,20
 
 - assignment - the name of the assignment
 - group - either Formative or Summative
 - score - a number between 0 and 100
 - weight - how much that assignment counts, as a percentage
 
-One rule to keep in mind: all your Formative assignments must add up to exactly 60, and all your Summative assignments must add up to exactly 40. If they do not, the program will tell you and stop.
+One thing I need to keep in mind is that all the Formative assignments must add up to exactly 60, and all the Summative assignments must add up to exactly 40. If they do not, the program will tell you and stop.
 
 ## Running the grade evaluator
 
